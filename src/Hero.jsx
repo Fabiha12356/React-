@@ -1,8 +1,9 @@
 import React from 'react'
+import "./Hero.css"
 
 const Hero = () => {
   return (
-    <h1>My father Name is Sohail</h1>
+    <h1 className="heading">My father Name is Sohail</h1>
   )
 }
 

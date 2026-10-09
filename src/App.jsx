@@ -5,7 +5,7 @@ import Header from './Header.jsx'
 let App = () =>{
   return(
     <>
-<h1>hello</h1>
+<h1 style={{backgroundColor : "purple" , color : "white"}}>hello</h1>
     </>
   )
 }
