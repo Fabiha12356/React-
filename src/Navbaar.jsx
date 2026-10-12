@@ -2,49 +2,37 @@ import React from 'react'
 
 export const Navbaar = () => {
   return (
-    <nav class="navbar md:navbar-expand bg-1">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
-      <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-      </div>
-      <div class="drawer-body mb-2 md:mb-0">
-        <ul class="nav navbar-nav me-auto">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">
+        <img src="" alt="img" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse gap-5 text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">About US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
-              Menu
-            </button>
-            <div class="menu">
-              <a class="menu-item" href="#">Action</a>
-              <a class="menu-item" href="#">Another action</a>
-              <hr class="menu-divider"/>
-              <a class="menu-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link active" aria-disabled="true">Use Cases</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" aria-disabled="true">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-disabled="true">Blog</a>
           </li>
         </ul>
-        <form class="hstack gap-2" role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn-solid btn-icon theme-secondary" type="submit">
-            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
-          </button>
-        </form>
+        <div>
+          <button class="btn line" type="submit">Request a quote</button>
+        </div>
       </div>
-    </dialog>
-  </div>
-</nav>
+    </div>
+  </nav>
   )
 }
