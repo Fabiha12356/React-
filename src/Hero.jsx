@@ -1,9 +1,20 @@
 import React from 'react'
 import "./Hero.css"
 
-const Hero = () => {
+const Hero = (props) => {
   return (
-    <h1 className="heading">My father Name is Sohail</h1>
+    (props.condition)?<>
+    <h1 className="heading">{props.name}</h1>
+    <h1 className="heading">{props.fathername}</h1>
+    <h1 className="heading">{props.class}</h1>
+    <h1 className="heading">{props.skill}</h1>
+    </>
+    :<>
+        <h1 className="heading">{props.name}</h1>
+    <h1 className="heading">{props.fathername}</h1>
+    <h1 className="heading">{props.class}</h1>
+    <h1 className="heading">{props.skill}</h1>
+    </>
   )
 }
 
