@@ -1,5 +1,8 @@
 .heading{
-    background-color: aqua !important;
+    /* background-color: aqua !important;
     color: brown !important;
-    text-align: end !important;
+    text-align: end !important; */
+      color: black !important;
+  background-color: yellow !important;
+  font-size: 30px !important;
 }
